@@ -9,7 +9,7 @@
     </style>
 
     <style name="SplashStyle" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowBackground">@color/colorAccentLight</item>
     </style>
 
 </resources>
