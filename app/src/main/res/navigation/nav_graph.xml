@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/archiveListFragment">
+    <fragment
+        android:id="@+id/archiveListFragment"
+        android:name="com.hithamhl.archiveapp.ui.fragment.ArchiveListFragment"
+        android:label="fragment_archive_list"
+        tools:layout="@layout/fragment_archive_list" >
+        <action
+            android:id="@+id/action_archiveListFragment_to_archiveDetails"
+            app:destination="@id/archiveDetails" />
+        <action
+            android:id="@+id/action_archiveListFragment_to_addArchiveFragment"
+            app:destination="@id/addArchiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArchiveFragment"
+        android:name="com.hithamhl.archiveapp.ui.fragment.AddArchiveFragment"
+        android:label="fragment_add_archive"
+        tools:layout="@layout/fragment_add_archive" />
+    <fragment
+        android:id="@+id/archiveDetails"
+        android:name="com.hithamhl.archiveapp.ui.fragment.ArchiveDetails"
+        android:label="fragment_archive_details"
+        tools:layout="@layout/fragment_archive_details" >
+        <action
+            android:id="@+id/action_archiveDetails_to_webArchiveDetails"
+            app:destination="@id/webArchiveDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/webArchiveDetails"
+        android:name="com.hithamhl.archiveapp.ui.fragment.WebArchiveDetails"
+        android:label="fragment_web_archive_details"
+        tools:layout="@layout/fragment_web_archive_details" />
+</navigation>
